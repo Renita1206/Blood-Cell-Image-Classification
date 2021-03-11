@@ -79,7 +79,7 @@ Accuracy
 
 
 Loss		 
-
+![alt text](https://github.com/[Renita1206]/DeepLearningIO/blob/main/Screenshot 2021-03-11 211421.png?raw=true)
 
 
 
