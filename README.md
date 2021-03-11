@@ -5,63 +5,14 @@ This dataset contains 12,500 augmented images of blood cells with accompanying c
 The cell types are Eosinophil, Lymphocyte, Monocyte, and Neutrophil. This dataset is accompanied by an additional dataset containing the original 410 images as well as two additional subtype labels and also bounding boxes for each cell in each of these 410 images.
  The folder 'dataset2-master' contains 2,500 augmented images as well as 4 additional subtype labels.
 
-Blood Cell Classes
+![Blood Cell Classes](https://user-images.githubusercontent.com/66276711/110815102-25810700-82b0-11eb-9d74-a6cb6eee2279.png)
+
  
-Model Summary 
-Layer (type)                 Output Shape              Param #   
-=================================================================
-conv2d_48 (Conv2D)           (None, 198, 198, 16)      448       
-_________________________________________________________________
-max_pooling2d_48 (MaxPooling (None, 99, 99, 16)        0         
-_________________________________________________________________
-batch_normalization_9 (Batch (None, 99, 99, 16)        64        
-_________________________________________________________________
-conv2d_49 (Conv2D)           (None, 97, 97, 64)        9280      
-_________________________________________________________________
-max_pooling2d_49 (MaxPooling (None, 48, 48, 64)        0         
-_________________________________________________________________
-dropout_48 (Dropout)         (None, 48, 48, 64)        0         
-_________________________________________________________________
-conv2d_50 (Conv2D)           (None, 46, 46, 64)        36928     
-_________________________________________________________________
-max_pooling2d_50 (MaxPooling (None, 23, 23, 64)        0         
-_________________________________________________________________
-dropout_49 (Dropout)         (None, 23, 23, 64)        0         
-_________________________________________________________________
-conv2d_51 (Conv2D)           (None, 21, 21, 64)        36928     
-_________________________________________________________________
-max_pooling2d_51 (MaxPooling (None, 10, 10, 64)        0         
-_________________________________________________________________
-dropout_50 (Dropout)         (None, 10, 10, 64)        0         
-_________________________________________________________________
-conv2d_52 (Conv2D)           (None, 8, 8, 64)          36928     
-_________________________________________________________________
-max_pooling2d_52 (MaxPooling (None, 4, 4, 64)          0         
-_________________________________________________________________
-dropout_51 (Dropout)         (None, 4, 4, 64)          0         
-_________________________________________________________________
-conv2d_53 (Conv2D)           (None, 2, 2, 128)         73856     
-_________________________________________________________________
-max_pooling2d_53 (MaxPooling (None, 1, 1, 128)         0         
-_________________________________________________________________
-dropout_52 (Dropout)         (None, 1, 1, 128)         0         
-_________________________________________________________________
-flatten_8 (Flatten)          (None, 128)               0         
-_________________________________________________________________
-dense_24 (Dense)             (None, 128)               16512     
-_________________________________________________________________
-dropout_53 (Dropout)         (None, 128)               0         
-_________________________________________________________________
-dense_25 (Dense)             (None, 64)                8256      
-_________________________________________________________________
-dropout_54 (Dropout)         (None, 64)                0         
-_________________________________________________________________
-dense_26 (Dense)             (None, 4)                 260       
-=================================================================
-Total params: 219,460
-Trainable params: 219,428
-Non-trainable params: 32
-_________________________________________________________________
+Model Summary
+
+![S1](https://user-images.githubusercontent.com/66276711/110815537-89a3cb00-82b0-11eb-9d78-b1882588e9a4.png)
+![S2](https://user-images.githubusercontent.com/66276711/110815688-ab04b700-82b0-11eb-9b7d-b42d19efc694.png)
+
 
 The above Convolutional Neural Network classifies the 4 classes of blood cells- Eosinophils, Monocytes, Lymphocytes and Basophiles after training.
 This model has 6 convolution layers, 2 dense layers, 7 dropouts and approximately 220K parameters.
@@ -72,15 +23,14 @@ Following methods were using in the above model to increase accuracy:
 Increased the number of convolution layers from 2 to 6 which caused a  significant increase in accuracy.
 Decreased the number of neurons in the convolution layers and connecting layers which led to a huge increase in accuracy %
 The model started overfitting so we added Dropouts to the convolution layers and decreased the Dropout values from 0.7 and 0.5 to values of 0.4 and 0.3 in the connecting layer. 
-Model Evaluation
 
 
 Accuracy	 
+![Accuracy](https://user-images.githubusercontent.com/66276711/110814995-ff5b6700-82af-11eb-848f-67cb4f069583.png)
 
 
-Loss		 ![Loss](https://user-images.githubusercontent.com/66276711/110814802-ccb16e80-82af-11eb-9e9f-2e9cdf71ea2f.png)
-
-![alt text](https://github.com/[Renita1206]/DeepLearningIO/blob/main/Loss.png?raw=true)
+Loss		 
+![Loss](https://user-images.githubusercontent.com/66276711/110814802-ccb16e80-82af-11eb-9e9f-2e9cdf71ea2f.png)
 
 
 
