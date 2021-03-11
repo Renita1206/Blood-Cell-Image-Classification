@@ -78,7 +78,8 @@ Model Evaluation
 Accuracy	 
 
 
-Loss		 
+Loss		 ![Loss](https://user-images.githubusercontent.com/66276711/110814802-ccb16e80-82af-11eb-9e9f-2e9cdf71ea2f.png)
+
 ![alt text](https://github.com/[Renita1206]/DeepLearningIO/blob/main/Loss.png?raw=true)
 
 
