@@ -26,10 +26,12 @@ The model started overfitting so we added Dropouts to the convolution layers and
 
 
 Accuracy	 
+
 ![Accuracy](https://user-images.githubusercontent.com/66276711/110814995-ff5b6700-82af-11eb-848f-67cb4f069583.png)
 
 
 Loss		 
+
 ![Loss](https://user-images.githubusercontent.com/66276711/110814802-ccb16e80-82af-11eb-9e9f-2e9cdf71ea2f.png)
 
 
